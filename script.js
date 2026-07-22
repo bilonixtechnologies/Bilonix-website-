@@ -1,32 +1,13 @@
-const cards = document.querySelectorAll(".card");
+document.addEventListener("DOMContentLoaded", function(){
 
-const observer = new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
-});
-
-});
-
-
-cards.forEach(card=>{
-
-observer.observe(card);
-
-});
 const menu = document.querySelector(".menu-icon");
-
 const nav = document.querySelector(".nav-links");
 
 
-menu.onclick = () => {
+menu.addEventListener("click", function(){
 
 nav.classList.toggle("active");
 
-};
+});
+
+});
