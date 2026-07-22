@@ -2,12 +2,17 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Arial', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
     background:#020617;
     color:white;
+    overflow-x:hidden;
 }
 
 
@@ -22,9 +27,11 @@ header{
 
 
 nav{
+
     width:90%;
     margin:20px auto;
-    padding:15px 30px;
+
+    padding:18px 35px;
 
     display:flex;
     justify-content:space-between;
@@ -34,36 +41,49 @@ nav{
     backdrop-filter:blur(15px);
 
     border:1px solid rgba(255,255,255,0.15);
-    border-radius:20px;
+    border-radius:25px;
+
 }
 
 
 .logo{
+
+    font-size:32px;
     color:#00aaff;
-    font-size:30px;
+    letter-spacing:2px;
+
+    text-shadow:0 0 20px #00aaff;
+
 }
 
 
 nav ul{
+
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:35px;
+
 }
 
 
 nav a{
+
     color:white;
     text-decoration:none;
+    transition:.3s;
+
 }
 
 
 nav a:hover{
+
     color:#00aaff;
+
 }
 
 
 
-/* Hero Section */
+/* Hero */
 
 .hero{
 
@@ -75,11 +95,12 @@ nav a:hover{
 
     text-align:center;
 
-    background:
-    radial-gradient(circle at center,#0066ff55,transparent 40%),
-    #020617;
+    padding:120px 20px;
 
-    padding:100px 20px;
+    background:
+    radial-gradient(circle at top,#0066ff55,transparent 35%),
+    radial-gradient(circle at bottom,#00aaff33,transparent 30%),
+    #020617;
 
 }
 
@@ -87,8 +108,9 @@ nav a:hover{
 
 .hero h1{
 
-    font-size:60px;
-    max-width:900px;
+    font-size:65px;
+    max-width:1000px;
+    line-height:1.2;
 
 }
 
@@ -97,15 +119,24 @@ nav a:hover{
 
     color:#00aaff;
 
+    text-shadow:
+    0 0 10px #00aaff,
+    0 0 30px #00aaff;
+
 }
 
 
 .hero p{
 
-    margin:25px auto;
+    margin:30px auto;
+
     max-width:650px;
+
     font-size:20px;
+
     color:#cbd5e1;
+
+    line-height:1.6;
 
 }
 
@@ -113,26 +144,31 @@ nav a:hover{
 
 button{
 
-    padding:15px 35px;
+    padding:16px 40px;
 
     border:none;
-    border-radius:30px;
+    border-radius:50px;
 
     background:#008cff;
+
     color:white;
 
     font-size:18px;
 
     cursor:pointer;
 
-    box-shadow:0 0 25px #008cff;
+    box-shadow:
+    0 0 15px #008cff,
+    0 0 40px #008cff55;
+
+    transition:.3s;
 
 }
 
 
 button:hover{
 
-    transform:scale(1.05);
+    transform:translateY(-5px);
 
 }
 
@@ -140,10 +176,10 @@ button:hover{
 
 /* Sections */
 
-
 section{
 
     padding:100px 10%;
+
     text-align:center;
 
 }
@@ -151,50 +187,57 @@ section{
 
 section h2{
 
-    font-size:40px;
-    margin-bottom:40px;
+    font-size:42px;
+
+    margin-bottom:50px;
+
+    color:#00aaff;
 
 }
 
 
 
-/* Service Cards */
-
+/* Cards */
 
 .cards{
 
     display:flex;
+
     justify-content:center;
-    gap:30px;
+
     flex-wrap:wrap;
 
+    gap:30px;
+
 }
+
 
 
 .card{
 
-    width:300px;
+    width:320px;
 
-    padding:30px;
+    padding:35px;
 
-    background:rgba(255,255,255,0.08);
+    background:rgba(255,255,255,0.07);
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(20px);
 
-    border-radius:20px;
+    border-radius:25px;
 
-    border:1px solid rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.15);
 
-    transition:.3s;
+    transition:.4s;
 
 }
 
 
+
 .card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-15px);
 
-    box-shadow:0 0 30px #008cff;
+    box-shadow:0 0 40px #008cff55;
 
 }
 
@@ -203,7 +246,20 @@ section h2{
 .card h3{
 
     color:#00aaff;
-    margin-bottom:15px;
+
+    margin-bottom:20px;
+
+    font-size:25px;
+
+}
+
+
+
+.card p{
+
+    color:#cbd5e1;
+
+    line-height:1.6;
 
 }
 
@@ -211,38 +267,8 @@ section h2{
 
 /* Footer */
 
-
 footer{
 
     background:#000814;
 
-    padding:30px;
-
-    text-align:center;
-
-    color:#94a3b8;
-
-}
-
-
-
-/* Mobile */
-
-
-@media(max-width:700px){
-
-nav ul{
-
-display:none;
-
-}
-
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-
-}
+   
