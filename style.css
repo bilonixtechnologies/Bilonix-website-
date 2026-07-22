@@ -648,3 +648,7 @@ display:flex;
 }
 
     }
+    .menu-icon{
+    position:relative;
+    z-index:9999;
+    }
