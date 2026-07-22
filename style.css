@@ -26,6 +26,19 @@ header{
 }
 
 
+
+
+
+.logo span{
+
+color:#00aaff;
+
+text-shadow:
+0 0 10px #00aaff,
+0 0 25px #00aaff;
+
+}
+
 nav{
 
     width:90%;
@@ -43,20 +56,8 @@ nav{
     border:1px solid rgba(255,255,255,0.15);
     border-radius:25px;
 
+    position:relative;
 }
-
-
-.logo span{
-
-color:#00aaff;
-
-text-shadow:
-0 0 10px #00aaff,
-0 0 25px #00aaff;
-
-}
-
-
 
 
 
