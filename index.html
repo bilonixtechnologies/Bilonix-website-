@@ -336,10 +336,11 @@ for the future.
                            </footer>
 
 
-<script src="script.js"></script>
 <script>
 function toggleMenu(){
-    document.getElementById("navLinks").classList.toggle("active");
+    let menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+    console.log("Menu clicked");
 }
 </script>
 
