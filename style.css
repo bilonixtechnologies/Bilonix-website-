@@ -629,8 +629,10 @@ display:flex;
     top:70px;
     right:20px;
     background:#030b1c;
+    width:200px;
     padding:20px;
     border-radius:15px;
+    z-index:999;
 }
 
 .nav-links.active{
@@ -638,8 +640,11 @@ display:flex;
 }
 
 .menu-icon{
+    display:block;
     cursor:pointer;
     font-size:30px;
+    position:relative;
+    z-index:1000;
 }
 
     }
