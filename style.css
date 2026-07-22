@@ -421,3 +421,68 @@ color:#cbd5e1;
 margin-bottom:25px;
 
     }
+    footer{
+
+background:#000814;
+
+padding:60px 10% 25px;
+
+}
+
+
+.footer-content{
+
+display:flex;
+
+justify-content:space-between;
+
+flex-wrap:wrap;
+
+gap:40px;
+
+}
+
+
+
+.footer-content h3{
+
+color:#00aaff;
+
+font-size:30px;
+
+margin-bottom:15px;
+
+}
+
+
+.footer-content h4{
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+
+
+.footer-content p{
+
+color:#94a3b8;
+
+margin-bottom:8px;
+
+}
+
+
+
+.copyright{
+
+margin-top:40px;
+
+padding-top:20px;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+text-align:center;
+
+    }
