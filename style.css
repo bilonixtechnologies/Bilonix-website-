@@ -97,11 +97,10 @@ radial-gradient(circle at bottom,#FFD70022,transparent 30%),
 
 
 .hero h1{
-
-    font-size:65px;
-    max-width:1000px;
-    line-height:1.2;
-
+    font-size:72px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:20px;
 }
 
 
@@ -114,21 +113,15 @@ radial-gradient(circle at bottom,#FFD70022,transparent 30%),
 }
 
 
+
+
 .hero p{
-
-    margin:30px auto;
-
-    max-width:650px;
-
-    font-size:20px;
-
-    color:#cbd5e1;
-
-    line-height:1.6;
-
+    max-width:700px;
+    margin:25px auto;
+    font-size:21px;
+    line-height:1.8;
+    color:#d1d5db;
 }
-
-
 
 
 
@@ -148,11 +141,11 @@ button{
 
 
 button:hover{
-
-    transform:translateY(-5px);
-
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:
+        0 0 25px #FFD700,
+        0 0 60px rgba(255,215,0,.5);
 }
-
 
 
 /* Sections */
