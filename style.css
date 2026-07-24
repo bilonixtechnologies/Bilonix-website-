@@ -185,3 +185,50 @@ nav ul{
 }
 
 }
+/* ===== Animated Background Glow ===== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.glow{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.45;
+    animation:float 8s ease-in-out infinite;
+}
+
+.glow1{
+    width:320px;
+    height:320px;
+    background:#00bfff;
+    top:40px;
+    left:-100px;
+}
+
+.glow2{
+    width:260px;
+    height:260px;
+    background:#3b82f6;
+    bottom:20px;
+    right:-80px;
+    animation-delay:3s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) translateX(0);
+}
+
+50%{
+transform:translateY(-30px) translateX(20px);
+}
+
+100%{
+transform:translateY(0) translateX(0);
+}
+
+    }
