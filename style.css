@@ -112,7 +112,17 @@ nav a:hover{
     transition:.3s;
 }
 
+.hero .btn:nth-child(2){
+    margin-left:15px;
+    background:transparent;
+    color:#FFD700;
+    border:1px solid #FFD700;
+}
 
+.hero .btn:nth-child(2):hover{
+    background:#FFD700;
+    color:#000;
+}
 .btn:hover{
     transform:translateY(-5px);
     box-shadow:0 0 30px rgba(255,215,0,.6);
