@@ -7,7 +7,7 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#08111f;
+    background:#000000;
     color:#fff;
     line-height:1.6;
 }
@@ -54,13 +54,15 @@ nav a:hover{
 }
 
 .hero{
+    position:relative;
+    overflow:hidden;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     padding:120px 20px 60px;
-    background:linear-gradient(135deg,#08111f,#10294d);
+    background:linear-gradient(135deg,#000000,#0a0a0a);
 }
 
 .hero-content{
@@ -127,7 +129,7 @@ section{
 }
 
 .card{
-    background:#13243d;
+    background:#111111;
     padding:30px;
     border-radius:20px;
     transition:.3s;
