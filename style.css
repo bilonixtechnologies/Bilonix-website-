@@ -21,9 +21,15 @@ header{
     top:0;
     left:0;
     width:100%;
-    background:transparent;
-    box-shadow:none;
     z-index:1000;
+
+    background:
+    radial-gradient(circle at top left, rgba(255,215,0,0.18), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255,170,0,0.12), transparent 35%),
+    linear-gradient(135deg,#020202,#0a0a0a,#121212);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
 }
 
 nav{
@@ -32,8 +38,22 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 30px;
+    padding:18px 30px;
     background:transparent;
+}
+
+.logo{
+    color:#FFD700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#FFD700;
 }
 
 .logo{
