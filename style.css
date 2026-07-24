@@ -20,10 +20,8 @@ header{
     position:fixed;
     top:0;
     width:100%;
-    background:rgba(0,0,0,0.2);
-    backdrop-filter:blur(15px);
-    -webkit-backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,215,0,0.12);
+    background:#FFD700;
+    box-shadow:0 4px 20px rgba(255,215,0,0.35);
     z-index:1000;
 }
 
@@ -39,7 +37,7 @@ nav{
 .logo{
     font-size:30px;
     font-weight:900;
-    color:#FFD700;
+    color:#000;
 }
 
 nav ul{
@@ -49,13 +47,14 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:#000;
     text-decoration:none;
+    font-weight:600;
     transition:.3s;
 }
 
 nav a:hover{
-    color:#FFD700;
+    color:#444;
 }
 
 
